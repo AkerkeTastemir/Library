@@ -14,7 +14,7 @@ public class BookController implements IBookController {
     @Override
     public void manageBooks() {
         // managing and interacting // example
-        Book book = new Book("1234567890123", "Effective Java", "Joshua Bloch", "Programming", true);
+        Book book = new Book("1234567890123", "Clear Code", "Uncle Bob", "programming", true);
         bookRepository.addBook(book);
         // add upd and del
     }
