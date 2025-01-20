@@ -40,3 +40,11 @@ The `books` table has the following columns:
 - PostgreSQL JDBC Driver
 
 #### Thats it!
+## Authors
+
+- [@AkerkeTastemir](https://www.github.com/akerketastemir) / Акерке
+
+- [@hqvnd](https://www.github.com/hqvnd) / Даниял
+
+- [@hyanosvke](https://www.github.com/hyanosvke) / Мирас
+
