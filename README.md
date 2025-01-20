@@ -15,11 +15,11 @@ This is a simple Library Management System developed using Java and PostgreSQL. 
 ## Project Structure
 
 - **Main.java**: The entry point of the application.
-- **com.company.controllers**: Contains the `BookController` class, which handles the business logic.
-- **com.company.repositories**: Contains the `BookRepository` class and `IBookRepository` interface, which interact with the database.
-- **com.company.data**: Contains the `PostgresDB` class and `IDB` interface, which manage the database connection.
-- **com.company.models**: Contains the `Book` class, which represents the book entity.
-- **com.company.ui**: Contains the `MyApplication` class, which handles user input and output.
+- **controllers**: Contains the `BookController` class, which handles the business logic.
+- **repositories**: Contains the `BookRepository` class and `IBookRepository` interface, which interact with the database.
+- **data**: Contains the `PostgresDB` class and `IDB` interface, which manage the database connection.
+- **models**: Contains the `Book` class, which represents the book entity.
+- **ui**: Contains the `MyApplication` class, which handles user input and output.
 
 ## Database Schema
 
