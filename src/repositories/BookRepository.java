@@ -37,19 +37,19 @@ public class BookRepository implements IBookRepository {
 
     @Override
     public boolean updateBook(Book book) {
-        // Implement update logic
+        // update
         return false;
     }
 
     @Override
     public boolean deleteBook(String isbn) {
-        // Implement delete logic
+        // delete
         return false;
     }
 
     @Override
     public Book getBook(String isbn) {
-        // Implement get single book logic
+        // get single book
         return null;
     }
 

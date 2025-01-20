@@ -4,46 +4,42 @@ import data.interfaces.IDB;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.SQLException;
 
 public class PostgresDB implements IDB {
-    private final String host;
+    private final String connectionUrl;
     private final String username;
     private final String password;
-    private final String dbName;
     private Connection connection;
 
     public PostgresDB(String host, String username, String password, String dbName) {
-        this.host = host;
+        this.connectionUrl = host + "/" + dbName;
         this.username = username;
         this.password = password;
-        this.dbName = dbName;
     }
 
     @Override
     public Connection getConnection() {
-        String connectionUrl = "jdbc:postgresql://" + host + "/" + dbName;
         try {
             if (connection != null && !connection.isClosed()) {
                 return connection;
             }
-
             Class.forName("org.postgresql.Driver");
             connection = DriverManager.getConnection(connectionUrl, username, password);
             return connection;
         } catch (Exception e) {
-            System.out.println("Failed to connect to PostgreSQL: " + e.getMessage());
+            System.out.println("Failed to connect to Postgres: " + e.getMessage());
             return null;
         }
     }
 
+    @Override
     public void close() {
-        if (connection != null) {
-            try {
+        try {
+            if (connection != null) {
                 connection.close();
-            } catch (SQLException ex) {
-                System.out.println("Connection close error: " + ex.getMessage());
             }
+        } catch (Exception e) {
+            System.out.println("Error closing connection: " + e.getMessage());
         }
     }
 }
