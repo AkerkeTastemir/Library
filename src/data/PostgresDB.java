@@ -15,7 +15,7 @@ public class PostgresDB implements IDB {
         this.connectionUrl = host + "/" + dbName;
         this.username = username;
         this.password = password;
-    }
+    } // main connection
 
     @Override
     public Connection getConnection() {

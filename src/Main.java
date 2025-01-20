@@ -14,5 +14,5 @@ public class Main {
         MyApplication app = new MyApplication(bookController);
         app.start();
         db.close();
-    }
+    } // dont change, everything is okay here
 }

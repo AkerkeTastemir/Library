@@ -15,7 +15,7 @@ public class Book {
         this.isAvailable = isAvailable;
     }
 
-    // Getters and Setters
+    // getts and setts
     public String getIsbn() {
         return isbn;
     }
@@ -46,4 +46,5 @@ public class Book {
     public void setAvailable(boolean available) {
         isAvailable = available;
     }
-}
+} // for models add the user stroke to connect and make category for users and admins to check ion know xd diddy ahh code
+// also add the models for new type of books and smth else $_$

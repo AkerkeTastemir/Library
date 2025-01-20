@@ -75,4 +75,5 @@ public class BookRepository implements IBookRepository {
         }
         return books;
     }
-}
+}// heres our repo for books only.
+// also add any repo for new coming models for example issued books or users and admins implementing users with more permissions
